@@ -1,7 +1,7 @@
 #!/bin/sh
 
-if [[ -f config ]]; then
-  ./config --prefix=$PREFIX
+if [[ -f configure ]]; then
+  ./configure --prefix=$PREFIX
   make
   make check
   make install
