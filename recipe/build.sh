@@ -1,6 +1,13 @@
 #!/bin/sh
 
-make
-make check
-cp go/mlr $PREFIX/bin/
-cp man/mlr.1 $PREFIX/man/man1/
+if [[ -f config ]]; then
+  ./config --prefix=$PREFIX
+  make
+  make check
+  make install
+else
+  make
+  make check
+  cp go/mlr $PREFIX/bin/
+  cp man/mlr.1 $PREFIX/man/man1/
+fi
