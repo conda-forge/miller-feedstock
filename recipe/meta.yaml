@@ -20,6 +20,7 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('go') }}
     - {{ compiler('cxx') }}
+    - make
   host:
     - flex
 
