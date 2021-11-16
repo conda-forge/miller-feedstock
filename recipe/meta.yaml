@@ -1,6 +1,6 @@
 {% set name = "miller" %}
 {% set version = "5.10.2" %}
-{% set sha256 = "b6026479ee7315656d7ec228d0084f86d4cecc5b8b00d5400f5fb3600af65eb3" %}
+{% set sha256 = "c300d136c26d09efc84da2c44cfda913af88757f2393837f07b6e5fea38f760a" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/johnkerl/miller/archive/v{{ version }}.tar.gz
+  url: https://johnkerl.org/miller-releases/miller-{{ version }}.conda.tar.gz
   sha256: {{ sha256 }}
 
 build:
