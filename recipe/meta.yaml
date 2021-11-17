@@ -1,6 +1,6 @@
 {% set name = "miller" %}
-{% set version = "5.3.0" %}
-{% set sha256 = "fff276e671adfae4959448a75004b03072e655db21a85c3f807eca95ba701bc1" %}
+{% set version = "5.10.3" %}
+{% set sha256 = "094642c6485080ddfd13025aa0e010e37e99b00b214ce729c43a5e43b215ec0a" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/johnkerl/miller/archive/v{{ version }}.tar.gz
+  url: https://github.com/johnkerl/miller/archive/refs/tags/v{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -18,6 +18,9 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ compiler('go') }}
+    - {{ compiler('cxx') }}
+    - make
   host:
     - flex
 
