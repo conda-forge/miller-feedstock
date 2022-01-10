@@ -1,6 +1,6 @@
 {% set name = "miller" %}
-{% set version = "5.10.3" %}
-{% set sha256 = "094642c6485080ddfd13025aa0e010e37e99b00b214ce729c43a5e43b215ec0a" %}
+{% set version = "6.0.0" %}
+{% set sha256 = "fca6d648212c30c9396868468ff6bd140bff57d324eac778e8ce8ae93ad52bed" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   number: 0
-  skip: True  # [win]
+  skip: true  # [win]
 
 requirements:
   build:
@@ -33,9 +33,7 @@ about:
   license: BSD-2-Clause
   license_family: BSD
   license_file: LICENSE.txt
-  summary: 'Miller is like awk, sed, cut, join, and sort for name-indexed data such as CSV, TSV,
-    and tabular JSON. You get to work with your data using named fields, without needing to count
-    positional column indices.'
+  summary: Miller is like awk, sed, cut, join, and sort for name-indexed data such as CSV, TSV, and tabular JSON. You get to work with your data using named fields, without needing to count positional column indices.
 
 extra:
   recipe-maintainers:
