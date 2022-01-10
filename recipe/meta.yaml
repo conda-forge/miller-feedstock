@@ -1,6 +1,6 @@
 {% set name = "miller" %}
-{% set version = "5.10.3" %}
-{% set sha256 = "094642c6485080ddfd13025aa0e010e37e99b00b214ce729c43a5e43b215ec0a" %}
+{% set version = "6.0.0" %}
+{% set sha256 = "fca6d648212c30c9396868468ff6bd140bff57d324eac778e8ce8ae93ad52bed" %}
 
 package:
   name: {{ name|lower }}
@@ -13,16 +13,12 @@ source:
 
 build:
   number: 0
-  skip: True  # [win]
+  skip: true  # [win]
 
 requirements:
   build:
-    - {{ compiler('c') }}
-    - {{ compiler('go') }}
-    - {{ compiler('cxx') }}
+    - go-nocgo
     - make
-  host:
-    - flex
 
 test:
   commands:
