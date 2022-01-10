@@ -13,12 +13,11 @@ source:
 
 build:
   number: 0
-  skip: True  # [win]
+  skip: true  # [win]
 
 requirements:
   build:
-    - {{ compiler('c') }}
-    - go
+    - go-nocgo
     - make
 
 test:
