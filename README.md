@@ -1,11 +1,11 @@
-About miller
-============
+About miller-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/miller-feedstock/blob/main/LICENSE.txt)
 
 Home: http://johnkerl.org/miller/doc/index.html
 
 Package license: BSD-2-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/miller-feedstock/blob/main/LICENSE.txt)
 
 Summary: Miller is like awk, sed, cut, join, and sort for name-indexed data such as CSV, TSV, and tabular JSON. You get to work with your data using named fields, without needing to count positional column indices.
 
