@@ -1,6 +1,6 @@
 #!/bin/sh
 
 ./configure --prefix=$PREFIX
-make
+make --jobs="${CPU_COUNT}"
 make check
 make install
