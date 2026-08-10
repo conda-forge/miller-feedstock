@@ -1,6 +1,6 @@
 {% set name = "miller" %}
-{% set version = "6.19.0" %}
-{% set sha256 = "032cd07d947986dfe9a97ed4f4ea5fb8bf354dce81229b58acad9e89e941a59e" %}
+{% set version = "6.21.0" %}
+{% set sha256 = "f92366ed67ffdbc75e8daf99a5087bcaa786c50f7c0eec08a8846e14fe7b2e5d" %}
 
 package:
   name: {{ name|lower }}
